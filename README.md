@@ -17,7 +17,8 @@ Open http://localhost:3000.
 ## Project layout
 
 - `src/lib/agent.ts`: model, system prompt and agent loop (`streamText` with tools)
-- `src/lib/tools/`: tools the agent can call
+- `src/lib/tools/`: tools the agent can call (`browser.ts`: open, click, type, read)
+- `src/lib/browser/session.ts`: headless Chromium per agent run (`@sparticuz/chromium` on Vercel, `CHROME_PATH` locally)
 - `src/app/api/chat/route.ts`: streaming chat endpoint
 - `src/app/page.tsx`: chat UI (`useChat`)
 
